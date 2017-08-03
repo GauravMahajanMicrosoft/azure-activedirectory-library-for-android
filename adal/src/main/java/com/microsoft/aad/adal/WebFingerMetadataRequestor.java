@@ -109,7 +109,7 @@ class WebFingerMetadataRequestor
 
         // build the url
         final StringBuilder webFingerUrlBuilder =
-                new StringBuilder("https://")
+                new StringBuilder().append("https://")
                         .append(passiveAuthEndpoint.getHost())
                         .append("/.well-known/webfinger?resource=")
                         .append(resource.toString());
